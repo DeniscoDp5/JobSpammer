@@ -1,6 +1,5 @@
 <html>
 	<head>
-		<title>Send your Curriculum Vitae</title>
 	<head>
 	<body>
 		<h1>Send your PDF curriculum in your area in an easy way</h1>
