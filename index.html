@@ -1,0 +1,198 @@
+<html>
+
+<head>
+	<title>Sender Email</title>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<!-- Font-Awesome 4 -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+	<!-- handMade CSS-->
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body id='body'>
+	<div class="container" style="margin-top : 35px;margin-bottom : 35px">
+		<h2 class="text-center" style="margin-bottom : 25px"> Email Sender</h2>
+		<!-- FORM SECTION -->
+		<div class="row justify-content-center" id="form-container">
+			<div class="col">
+				<form style="width:100%">
+					<div class="row">
+						<div class="col-sm-12 col-md-6" style="margin-bottom : 15px">
+							<select class="custom-select" id="category">
+								<option selected>Seleziona La Categoria</option>
+								<option>Abbigliamento</option>
+								<option>Bar</option>
+								<option>Informatica</option>
+								<option>Meccanica</option>
+								<option>Negozi</option>
+								<option>Trasporti</option>
+							</select>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<select class="custom-select" id="location">
+								<option>Seleziona la Localita'</option>
+								<option>Agrigento</option>
+								<option>Alessandria</option>
+								<option>Ancona</option>
+								<option>Aosta</option>
+								<option>Arezzo</option>
+								<option>Ascoli Piceno</option>
+								<option>Asti</option>
+								<option>Avellino</option>
+								<option>Bari</option>
+								<option>Barletta-Andria-Trani</option>
+								<option>Belluno</option>
+								<option>Benevento</option>
+								<option>Bergamo</option>
+								<option>Biella</option>
+								<option>Bologna</option>
+								<option>Bolzano</option>
+								<option>Brescia</option>
+								<option>Brindisi</option>
+								<option>Cagliari</option>
+								<option>Caltanissetta</option>
+								<option>Campobasso</option>
+								<option>Carbonia-iglesias</option>
+								<option>Caserta</option>
+								<option>Catania</option>
+								<option>Catanzaro</option>
+								<option>Chieti</option>
+								<option>Como</option>
+								<option>Cosenza</option>
+								<option>Cremona</option>
+								<option>Crotone</option>
+								<option>Cuneo</option>
+								<option>Enna</option>
+								<option>Fermo</option>
+								<option>Ferrara</option>
+								<option>Firenze</option>
+								<option>Foggia</option>
+								<option>Forl&igrave;-Cesena</option>
+								<option>Frosinone</option>
+								<option>Genova</option>
+								<option>Gorizia</option>
+								<option>Grosseto</option>
+								<option>Imperia</option>
+								<option>Isernia</option>
+								<option>La spezia</option>
+								<option>L'aquila</option>
+								<option>Latina</option>
+								<option>Lecce</option>
+								<option>Lecco</option>
+								<option>Livorno</option>
+								<option>Lodi</option>
+								<option>Lucca</option>
+								<option>Macerata</option>
+								<option>Mantova</option>
+								<option>Massa-Carrara</option>
+								<option>Matera</option>
+								<option>Medio Campidano</option>
+								<option>Messina</option>
+								<option>Milano</option>
+								<option>Modena</option>
+								<option>Monza e della Brianza</option>
+								<option>Napoli</option>
+								<option>Novara</option>
+								<option>Nuoro</option>
+								<option>Ogliastra</option>
+								<option>Olbia-Tempio</option>
+								<option>Oristano</option>
+								<option>Padova</option>
+								<option>Palermo</option>
+								<option>Parma</option>
+								<option>Pavia</option>
+								<option>Perugia</option>
+								<option>Pesaro e Urbino</option>
+								<option>Pescara</option>
+								<option>Piacenza</option>
+								<option>Pisa</option>
+								<option>Pistoia</option>
+								<option>Pordenone</option>
+								<option>Potenza</option>
+								<option>Prato</option>
+								<option>Ragusa</option>
+								<option>Ravenna</option>
+								<option>Reggio di Calabria</option>
+								<option>Reggio nell'Emilia</option>
+								<option>Rieti</option>
+								<option>Rimini</option>
+								<option>Roma</option>
+								<option>Rovigo</option>
+								<option>Salerno</option>
+								<option>Sassari</option>
+								<option>Savona</option>
+								<option>Siena</option>
+								<option>Siracusa</option>
+								<option>Sondrio</option>
+								<option>Taranto</option>
+								<option>Teramo</option>
+								<option>Terni</option>
+								<option>Torino</option>
+								<option>Trapani</option>
+								<option>Trento</option>
+								<option>Treviso</option>
+								<option>Trieste</option>
+								<option>Udine</option>
+								<option>Varese</option>
+								<option>Venezia</option>
+								<option>Verbano-Cusio-Ossola</option>
+								<option>Vercelli</option>
+								<option>Verona</option>
+								<option>Vibo valentia</option>
+								<option>Vicenza</option>
+								<option>Viterbo</option>
+							</select>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+		<!-- Loading Section and Button -->
+		<div class="row justify-content-center">
+			<div class="col-10">
+				<div class="progress" style="display:none">
+					<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+					 style="width:0%">
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<i id="loader" class="fa fa-circle-o-notch fa-spin" style="font-size:24px;"></i>
+			</div>
+			<div class="col-4">
+				<button id="button" type="button" class="btn btn-primary btn-lg btn-block">START</button>
+			</div>
+			<div class="row"></div>
+		</div>
+		<!-- Result Displaing -->
+		<div class="row justify-content-center" style="margin-top:15px">
+			<div class="col-12">
+				<p id="informer" class="text-left" style="width: 50%;"></p>
+			</div>
+			<div class="col-12">
+				<div class="jumbotron" id="list-Area">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-4">
+				<button id="button-2" type="button" class="btn btn-primary btn-lg btn-block" style="display : none;">Inizia seconda fase</button>
+				<button id="button-3" type="button" class="btn btn-primary btn-lg btn-block" style="display : none;">Trova indirizzi E-mail</button>
+			</div>
+		</div>
+
+	</div>
+	<!-- APP -->
+	<script src="js/app.js"></script>
+</body>
+
+
+</html>
