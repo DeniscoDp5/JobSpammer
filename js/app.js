@@ -112,7 +112,7 @@ function removeDuplicates(inp){
 			$.ajax({
 				//contentType: "json",
 				//dataType: "json",
-				url: "cgi-bin/googleFinder.py",
+				url: "cgi-bin/yahooFinder.py",
 				data : {'array' : this.data},
 				success : function(json){
 					response2.push(JSON.parse(json).response);
